@@ -28,4 +28,10 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+	
+/*AuthServiceProvider    $this->registerPolicies();官方已经写好，不需要下面语句
+	public function owns($related)
+    {
+        return $this->id == $related->user_id;
+    }*/
 }
