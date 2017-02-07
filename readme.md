@@ -9,7 +9,9 @@
 
 喜欢可以点击上面右侧的 Star 哦
 
-
+Laravel 5 系列入门教程推荐如下文章：
+https://github.com/johnlui/Learn-Laravel-5
+http://www.zhoujiping.com/laravel-tutorial.html
 
 ## License
 
