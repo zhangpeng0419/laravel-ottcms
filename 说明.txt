@@ -1,0 +1,22 @@
+laravel 5.49 版本，已经安装了passport
+需要安装passport后安装auth不然出错
+
+因为涉及数据库低于5.6问题，所以需要修改C:\wamp\www\app\Providers\AppServiceProvider
+<?php
+
+namespace App\Providers;
+
+use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
+class AppServiceProvider extends ServiceProvider
+{
+    /**
+     * Bootstrap any application services.
+     *
+     * @return void
+     */
+    public function boot()
+    { Schema::defaultStringLength(191);
+    }
+
+http://localhost/oauth/clients当前用户所有客户端参考：http://laravelacademy.org/post/5993.html
