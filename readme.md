@@ -1,17 +1,16 @@
-<p align="center"> laravel5.49</p>
+ 
 
-<p align="center">
+## Laravel 5.4.9演示项目
 
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+ 
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+## 有问题可以直接在教程下面留言
+
+喜欢可以点击上面右侧的 Star 哦
 
 
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+本示例项目继承自 Laravel5.4.9 采用的 MIT license，你可以利用采用该协议的代码做任何事情，只需要保留源码中的版权声明即可。
