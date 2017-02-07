@@ -25,7 +25,11 @@ Laravel 5 系列入门教程推荐如下文章：
 
 </blockquote>
  
+## passport api
 
+<p>http://localhost/api/user/register post register</p>
+<p>http://localhost/oauth/token       post token</p>
+<p>http://localhost/api/user          get user</p>
 
 ## License
 
