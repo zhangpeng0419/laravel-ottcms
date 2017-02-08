@@ -2,7 +2,27 @@
 
 ## Laravel 5.4.9演示项目
 
- 
+  
+##安装
+
+git clone 到本地<br>
+执行 composer install,创建好数据库<br>
+配置 .env 中数据库连接信息,没有.env请复制.env.example命名为.env<br>
+执行 php artisan key:generate<br>
+执行 php artisan migrate<br>
+执行 php artisan db:seed<br>
+键入 '域名/admin'(后台登录)<br>
+## 功能
+
+文章管理：发布，编辑，查看，删除<br>
+评论管理：发布，删除<br>
+分类管理：添加，编辑，删除，统计访问，keyword，description<br>
+passport api<br>
+
+<p>http://localhost/api/user/register post register</p>
+<p>http://localhost/oauth/token       post token</p>
+<p>http://localhost/api/user          get user</p>
+
 
 
 ## 有问题可以直接在教程下面留言
@@ -132,22 +152,8 @@ Laravel 5 系列入门教程推荐如下文章：
 </article>
   </div>
 </blockquote>
+
  
-##安装
-
-git clone 到本地
-执行 composer install,创建好数据库
-配置 .env 中数据库连接信息,没有.env请复制.env.example命名为.env
-执行 php artisan key:generate
-执行 php artisan migrate
-执行 php artisan db:seed
-键入 '域名/admin'(后台登录)
-
-## passport api
-
-<p>http://localhost/api/user/register post register</p>
-<p>http://localhost/oauth/token       post token</p>
-<p>http://localhost/api/user          get user</p>
 
 ## License
 
