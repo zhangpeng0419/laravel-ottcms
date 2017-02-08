@@ -25,6 +25,16 @@ Laravel 5 系列入门教程推荐如下文章：
 
 </blockquote>
  
+##安装
+
+git clone 到本地
+执行 composer install,创建好数据库
+配置 .env 中数据库连接信息,没有.env请复制.env.example命名为.env
+执行 php artisan key:generate
+执行 php artisan migrate
+执行 php artisan db:seed
+键入 '域名/admin'(后台登录)
+
 ## passport api
 
 <p>http://localhost/api/user/register post register</p>
