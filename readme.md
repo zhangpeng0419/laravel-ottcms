@@ -128,7 +128,7 @@ Laravel 5 系列入门教程推荐如下文章：
 <li><a href="http://stackoverflow.com/">Stack Overflow</a> —— Stack Overflow大部分技术问题都能在上面找到答案</li>
 </ul>
 
-<p>未完<g-emoji alias="dog" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f436.png" ios-version="6.0">🐶</g-emoji></p>
+<p>(参考rang9527文档，地址：https://github.com/rang9527/Laravel-sites)</p>
 </article>
   </div>
 </blockquote>
