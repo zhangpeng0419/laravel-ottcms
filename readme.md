@@ -13,7 +13,7 @@ git clone 到本地<br>
 执行 php artisan db:seed<br>
 键入 '域名/admin'(后台登录)<br>
 ## 功能
-
+文章展示：查看，评论<br>
 文章管理：发布，编辑，查看，删除<br>
 评论管理：发布，删除<br>
 分类管理：添加，编辑，删除，统计访问，keyword，description<br>
