@@ -3,11 +3,15 @@
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
+
+use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Auth;
 
 class AdminController extends Controller
 {
-    /**
+
+     /**
      * Create a new controller instance.
      *
      * @return void
@@ -24,7 +28,8 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin/home');
+        // dd('后台首页，当前用户名：'.auth('admin')->user()->name);
+		 return view('admin/index');
     }
-
+	 
 }

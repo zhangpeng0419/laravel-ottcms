@@ -21,7 +21,7 @@
 
                             <a href="{{ url('admin/article/create') }}" class="btn btn-lg btn-primary">新增</a>
                     @foreach ($articles as $article)
-                            @if  ($article->user_id == Auth::user()->id)<!--限定用户权限-->
+                            <!--限定用户权限-->
                                 <hr>
                         <div class="article">
                             <h4>{{ $article->title }}</h4>
@@ -37,7 +37,7 @@
                             {{ csrf_field() }}
                             <button type="submit" class="btn btn-danger">删除</button>
                         </form>
-                            @endif
+                         
                     @endforeach
 
                 </div>

@@ -13,8 +13,9 @@
 
 Route::get('/', function () {
     return view('welcome');
+	 
 });
-
+ 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
@@ -44,5 +45,6 @@ Route::get('/', 'AdminController@index');
     //    管理用户
     Route::get('user', 'UserController@index');
     Route::resource('user', 'UserController');
-
+   
 });
+
