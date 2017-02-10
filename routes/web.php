@@ -33,14 +33,7 @@ Route::group(['middleware' => 'auth', 'namespace' => 'User', 'prefix' => 'user']
 
 Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin'], function() {
 Route::get('/', 'AdminController@index');
-//评论管理
-    Route::get('comment', 'CommentController@index');
-    Route::resource('comment', 'CommentController');
 
-
-    //    管理用户
-    Route::get('user', 'UserController@index');
-    Route::resource('user', 'UserController');
    
 });
 
@@ -57,4 +50,12 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ($router)
 	//    分类管理
     Route::get('category', 'CategoryController@index');
     Route::resource('category', 'CategoryController');
+	//评论管理
+    Route::get('comment', 'CommentController@index');
+    Route::resource('comment', 'CommentController');
+
+
+    //    管理用户
+    Route::get('user', 'UserController@index');
+    Route::resource('user', 'UserController');
 });

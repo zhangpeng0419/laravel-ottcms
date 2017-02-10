@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
-                <div class="panel-heading">文章管理</div>
+                <div class="panel-heading">用户管理</div>
                 <div class="panel-body">
                     @if (count($errors) > 0)
                         <div class="alert alert-danger">
@@ -20,9 +20,9 @@
 
 
                             <a href="{{ url('admin/user/create') }}" class="btn btn-lg btn-primary">新增</a>
-                    @foreach ($users as $user)
-
-                            @if  ( Auth::user()->name == 'aicow')<!--限定用户权限-->
+                    @foreach ($admins as $user)
+  
+                          <!--限定用户权限-->
                                 <hr>
                         <div class="article">
 
@@ -38,7 +38,7 @@
                             {{ csrf_field() }}
                             <button type="submit" class="btn btn-danger">删除</button>
                         </form>
-                            @endif
+                         
                     @endforeach
 
                 </div>

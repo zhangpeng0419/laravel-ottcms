@@ -4,12 +4,15 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 
 use App\Http\Controllers\Controller;
-use App\user;
+use App\Models\admin;
 class UserController extends Controller
-{
+{public function __construct()
+    {
+        $this->middleware('auth.admin:admin');
+    }
     public function index()
     {
-        return view('admin/user/index')->withUsers(user::all());
+        return view('admin/user/index')->withAdmins(Admin::all());
     }
 
     public function create()

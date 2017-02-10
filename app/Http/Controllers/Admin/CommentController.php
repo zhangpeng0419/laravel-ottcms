@@ -9,7 +9,10 @@ use App\Http\Requests;
  
 use App\Comment;
 class CommentController extends Controller
-{
+{public function __construct()
+    {
+        $this->middleware('auth.admin:admin');
+    }
     public function index()
     {
         return view('admin/Comment/index')->withComments(Comment::all());

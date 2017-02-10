@@ -6,7 +6,10 @@ use App\Http\Controllers\Controller;
 use App\Article;
 use App\Category;
 class ArticleController extends Controller
-{
+{public function __construct()
+    {
+        $this->middleware('auth.admin:admin');
+    }
     public function index()
     {
         return view('admin/article/index')->withArticles(Article::all());
