@@ -18,6 +18,8 @@ git clone 到本地<br>
 集成百度ueeditor<br>
 评论管理：发布，删除<br>
 分类管理：添加，编辑，删除，统计访问，keyword，description<br>
+前台用户登录，注册（auth）<br>
+后台用户分表登录（admins表）<br>
 passport api<br>
 
 <p>http://localhost/api/user/register post register</p>
