@@ -13,15 +13,14 @@ git clone 到本地<br>
 执行 php artisan db:seed<br>
 键入 '域名/admin'(后台登录)<br>
 ## 功能
-文章展示：查看，评论<br>
-文章管理：发布，编辑，查看，删除<br>
-集成百度ueeditor<br>
-评论管理：发布，删除<br>
-分类管理：添加，编辑，删除，统计访问，keyword，description<br>
-前台用户登录，注册（auth）<br>
-后台用户分表登录（admins表）<br>
-passport api<br>
-
+1.文章展示：查看，评论<br>
+2.文章管理：发布，编辑，查看，删除<br>
+3.集成百度ueeditor<br>
+4.评论管理：发布，删除<br>
+5.分类管理：添加，编辑，删除，统计访问，keyword，description<br>
+6.前台用户登录，注册（auth）<br>
+7.后台用户分表登录（admins表）<br>
+8.passport api<br>
 <p>http://localhost/api/user/register post register</p>
 <p>http://localhost/oauth/token       post token</p>
 <p>http://localhost/api/user          get user</p>
