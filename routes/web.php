@@ -36,15 +36,25 @@ Route::get('/', 'AdminController@index');
 //评论管理
     Route::get('comment', 'CommentController@index');
     Route::resource('comment', 'CommentController');
-//    分类管理
-    Route::get('category', 'CategoryController@index');
-    Route::resource('category', 'CategoryController');
-//    管理文章
-    Route::get('article', 'ArticleController@index');
-    Route::resource('article', 'ArticleController');
+
+
     //    管理用户
     Route::get('user', 'UserController@index');
     Route::resource('user', 'UserController');
    
 });
 
+Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ($router)
+{
+    $router->get('login', 'LoginController@showLoginForm')->name('admin.login');
+    $router->post('login', 'LoginController@login');
+    $router->post('logout', 'LoginController@logout');
+
+    $router->get('dash', 'DashboardController@index');
+	//    管理文章
+    Route::get('article', 'ArticleController@index');
+    Route::resource('article', 'ArticleController');
+	//    分类管理
+    Route::get('category', 'CategoryController@index');
+    Route::resource('category', 'CategoryController');
+});

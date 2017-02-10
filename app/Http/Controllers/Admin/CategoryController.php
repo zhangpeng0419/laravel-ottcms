@@ -13,7 +13,10 @@ use App\Category;
 
 
 class CategoryController extends Controller
-{
+{ public function __construct()
+    {
+        $this->middleware('auth.admin:admin');
+    }
     //get.admin/category  全部分类列表
     public function index()
     {

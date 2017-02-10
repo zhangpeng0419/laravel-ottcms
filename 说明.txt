@@ -20,3 +20,4 @@ class AppServiceProvider extends ServiceProvider
     }
 
 http://localhost/oauth/clients当前用户所有客户端参考：http://laravelacademy.org/post/5993.html
+2017.2.9后台没做中间件路由过滤
